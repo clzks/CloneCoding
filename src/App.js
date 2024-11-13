@@ -1,13 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import LogoButton from './components/header/LogoButton';
+import Layout from './components/layout/Layout';
 
 
 function App() {
   return (
-    <div className="App">
-      <LogoButton></LogoButton>
-    </div>
+    <Layout>
+    </Layout>
   );
 }
 
