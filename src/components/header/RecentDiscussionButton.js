@@ -5,7 +5,7 @@ const RecentDiscussionButton = () => {
   return (
     <StyledDiscussionButton>
       <StyledMdForum></StyledMdForum>
-      <span>최근 변경</span>
+      <span>최근 토론</span>
     </StyledDiscussionButton>
   )
 }

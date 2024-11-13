@@ -14,7 +14,20 @@ body {
 
 .footer {
     background-color: #5B5B5B;
-    height: 80px;
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-item {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
 }
 
 .sideComponent {

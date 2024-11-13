@@ -5,23 +5,23 @@ import { MdOpenInNew } from 'react-icons/md';
 
 
 const NewsList = () => {
-    return (
-        <NewsListPanel className="sideComponent">
-            <NewsIcon>
-                <AnnouncementIcon></AnnouncementIcon>
-                <span>꺼무 뉴스</span>
-            </NewsIcon>
-            <News>첫번째 뉴스입니다. 샘플입니다.</News>
-            <News>두번째 뉴스입니다. 샘플입니다.</News>
-            <News>세번째</News>
-            <News>4번째 뉴스입니다. 일부러 텍스트를 길게 처리해서 줄임 효과가 제대로 표시되는지 테스트 중입니다.</News>
-            <News>5번째 뉴스입니다. 샘플입니다.</News>
-            <ReadMoreButton >
-                더 보기
-                <MdOpenInNew></MdOpenInNew>
-            </ReadMoreButton>
-        </NewsListPanel>
-    )
+  return (
+    <NewsListPanel className="sideComponent">
+      <NewsIcon>
+        <AnnouncementIcon></AnnouncementIcon>
+        <span>꺼무 뉴스</span>
+      </NewsIcon>
+      <News>첫번째 뉴스입니다. 샘플입니다.</News>
+      <News>두번째 뉴스입니다. 샘플입니다.</News>
+      <News>세번째</News>
+      <News>4번째 뉴스입니다. 일부러 텍스트를 길게 처리해서 줄임 효과가 제대로 표시되는지 테스트 중입니다.</News>
+      <News>5번째 뉴스입니다. 샘플입니다.</News>
+      <ReadMoreButton >
+        더 보기
+        <MdOpenInNew></MdOpenInNew>
+      </ReadMoreButton>
+    </NewsListPanel>
+  )
 }
 
 const NewsListPanel = styled.div`
@@ -60,6 +60,10 @@ const News = styled.button`
   text-overflow : ellipsis;
   white-space : nowrap;
   margin-bottom : 5px;
+
+  &:hover{
+    text-decoration: underline;  
+  }
 `
 
 const ReadMoreButton = styled(Button)`
