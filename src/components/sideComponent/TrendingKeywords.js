@@ -8,34 +8,29 @@ const TrendingKeywords = () => {
   const handleMouseLeave = () => setIsHover(false);
 
   return (
-    <TrendingKeywordsPanel
-      className="sideComponent"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      {isHover ? (
-        <FullRankPanel>ddd</FullRankPanel>
-      ) : (
-        <SmallRankPanel>ddd</SmallRankPanel>
-      )}
-    </TrendingKeywordsPanel>
+      <TrendingKeywordsPanel
+        className="sideComponent"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        실시간검색어
+      </TrendingKeywordsPanel>
   );
 };
 
 const TrendingKeywordsPanel = styled.div`
-  height: 50px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-`;
-
-const SmallRankPanel = styled.div`
+  height: 45px;
   text-align: left;
   padding-left: 20px;
-  margin-top: 10px;
-`;
+  position : absolute;
+  display: flex;
+  align-items: center;
 
-const FullRankPanel = styled.div`
-  // 실시간 검색어 반응형
+  &:hover {
+    align-items: normal;
+    height : 400px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  }
 `;
 
 export default TrendingKeywords;

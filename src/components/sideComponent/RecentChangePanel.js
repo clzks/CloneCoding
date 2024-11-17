@@ -52,13 +52,13 @@ const StyledRecentChangePanel = styled.div`
   display: flex;
   flex-direction: column;
   height: 360px;
-  border-radius: 5px;
   font-size: 16px;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
   margin-bottom: 10px;
+  margin-top : 60px;
 `;
 const StyledRecentIcon = styled(RecentChangeButton).attrs({
   iconSize: "30px", // 원하는 크기로 지정

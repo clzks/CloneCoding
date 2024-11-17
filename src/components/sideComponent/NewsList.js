@@ -28,7 +28,6 @@ const NewsListPanel = styled.div`
   display : flex;
   flex-direction: column;
   height : 290px;
-  border-radius : 5px;
   font-size : 16px;
   padding-top : 20px;
   padding-left : 20px;
